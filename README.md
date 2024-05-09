@@ -22,7 +22,7 @@ Default prefix for tmux changed on `C + a`, so you have to run `Prefix + I`
 
 Based on tmux nord theme https://github.com/nordtheme/tmux
 
-Customized with pligins for development and pentest. Mouse scrolling activated, you can copy information with selecting and pressing `y`, activated  tmux logging plugin, horizontal split set on `-`, vertical on `|`. Switchin between panes done by `Shift + arrows`
+Customized with pligins for development and pentest. Mouse scrolling activated, you can copy information with selecting and pressing `y`, activated  tmux logging plugin, horizontal split set on `-`, vertical on `|`. To switch between panes use `Shift + arrows`
 
 `Ctrl + l` cleares screen and tmux history.
 
