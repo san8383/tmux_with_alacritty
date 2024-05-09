@@ -1,6 +1,23 @@
 #!/bin/bash
+
+# Check if ~/.config/alacritty/ exists, if not, create it
+if [ ! -d ~/.config/alacritty/ ]; then
+    mkdir -p ~/.config/alacritty/
+fi
+
+# Check if ~/.local/bin/ exists, if not, create it
+if [ ! -d ~/.local/bin/ ]; then
+    mkdir -p ~/.local/bin/
+fi
+
+# Update and install required packages
 sudo apt update && sudo apt install alacritty -y && sudo apt install tmux -y && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Copy configuration files
 cp zshrc ~/.zshrc
 cp tmux.conf ~/.tmux.conf
-mkdir ~/.local/bin/ && cp alacritty-with-tmux.sh ~/.local/bin/alacritty-with-tmux.sh # make link on that script to run tmux with allacrity on mouse click
-mkdir ~/.config/alacritty/ && cp alacritty.yml ~/.config/alacritty/alacritty.yml
+cp alacritty.yml ~/.config/alacritty/alacritty.yml
+
+# Copy alacritty-with-tmux.sh script to ~/.local/bin/ and make it executable
+cp alacritty-with-tmux.sh ~/.local/bin/alacritty-with-tmux.sh
+chmod +x ~/.local/bin/alacritty-with-tmux.sh
