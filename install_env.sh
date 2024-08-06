@@ -16,7 +16,7 @@ sudo apt update && sudo apt install alacritty -y && sudo apt install tmux -y && 
 # Copy configuration files
 cp zshrc ~/.zshrc
 cp tmux.conf ~/.tmux.conf
-cp alacritty.yml ~/.config/alacritty/alacritty.toml
+cp alacritty.toml ~/.config/alacritty/alacritty.toml
 
 # Copy alacritty-with-tmux.sh script to ~/.local/bin/ and make it executable
 cp alacritty-with-tmux.sh ~/.local/bin/alacritty-with-tmux.sh
