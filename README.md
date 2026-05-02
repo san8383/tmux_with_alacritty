@@ -2,17 +2,29 @@
 Assuming you are working in kali linux or another linux system with sudo installed.
 
 - Clone repository
-`https://github.com/san8383/tmux_with_alacritty.git`
+  ```bash
+  https://github.com/san8383/tmux_with_alacritty.git
+  ```
 - enter a folder
-`cd tmux_with_alacritty`
+  ```bash
+  cd tmux_with_alacritty
+  ```
 - make file executable
-`chmod +x install_env.sh`
+  ```bash
+  chmod +x install_env.sh
+  ```
 - run install
-`./install_env.sh`
+  ```bash
+  ./install_env.sh
+  ```
 - You can run the script with the --dry-run flag to see how the script works without making any changes to the system.
-`./install_env.sh --dry-run`
+  ```bash
+  ./install_env.sh --dry-run
+  ```
 - If you don't need alacritty, for example on a server without X11/Wayland, you can run the installation without it.
-`./install_env.sh --no-alacritty`
+  ```bash
+  ./install_env.sh --no-alacritty
+  ```
 
 After installation reboot the system. Add an icon for running tmux in alacritty in one click and give an address for executable `~/.local/bin/alacritty-with-tmux`
 # First start (graphical environment)
