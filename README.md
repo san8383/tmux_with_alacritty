@@ -9,13 +9,13 @@ Assuming you are working in kali linux or another linux system with sudo install
 `chmod +x install_env.sh`
 - run install
 `./install_env.sh`
-- you can run script to see how it works without any changes to the system
+- You can run the script with the --dry-run flag to see how the script works without making any changes to the system.
 `./install_env.sh --dry-run`
-- if you dont need alacritty (for example on server without X11/Wayland) you can run installation without it
+- If you don't need alacritty, for example on a server without X11/Wayland, you can run the installation without it.
 `./install_env.sh --no-alacritty`
 
 After installation reboot the system. Add an icon for running tmux in alacritty in one click and give an address for executable `~/.local/bin/alacritty-with-tmux`
-# First start
+# First start (graphical environment)
 Run your tmux by running script `~/.local/bin/alacritty-with-tmux`
 
 With the first start you need to install tmux plugins.
